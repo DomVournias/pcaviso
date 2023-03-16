@@ -1,0 +1,122 @@
+.menu {
+  background-color: var(--body-bg);
+  border-radius: 8px;
+  box-shadow: 0px 10px 20px rgba(41, 51, 61, 0.1);
+  ul {
+    li {
+      list-style: none;
+      position: relative;
+      color: var(--body-color);
+
+      a {
+        white-space: nowrap;
+      }
+
+      svg {
+        display: inline-flex;
+      }
+    }
+  }
+}
+
+[data-theme="dark"] .menu {
+  background-color: var(--gray-600);
+}
+
+.main_menu {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 8px;
+  z-index: 100;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+.main_links {
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: var(--body-color);
+
+  &:hover {
+    background-color: var(--gray-300);
+    transition: all 0.2s ease-out;
+  }
+}
+
+.main_links:hover + .sub_menu,
+.sub_menu:hover {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.2s ease-in, transform 0.2s ease-in-out,
+    visibility 0.2s ease-out;
+}
+
+.links {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.sub_menu {
+  position: absolute;
+  font-weight: 600;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 8px;
+  background-color: var(--body-bg);
+  top: 0;
+  right: -165px;
+  box-shadow: 0px 10px 20px rgba(41, 51, 61, 0.1);
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.2s ease-in, transform 0.2s ease-in-out,
+    visibility 0.2s ease-out;
+}
+
+[data-theme="dark"] .sub_menu {
+  background-color: var(--gray-400);
+}
+
+.sub_links:hover + .extra_menu,
+.extra_menu:hover {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.2s ease-in, transform 0.2s ease-in-out,
+    visibility 0.2s ease-out;
+}
+
+.extra_menu {
+  position: absolute;
+  min-height: fit-content;
+  top: 0px;
+  right: -128px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.2s ease-in, transform 0.2s ease-in-out,
+    visibility 0.2s ease-out;
+}
+
+.sub_links {
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: capitalize;
+  padding: 10px 15px;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: var(--gray-300);
+    transition: all 0.2s ease-out;
+  }
+}

@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.url {
+  display: flex;
+  gap: 5px;
+
+  &:hover {
+    svg {
+      fill: var(--orange);
+      transition: fill 0.1s ease-in;
+    }
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  width: 17px;
+  height: 17px;
+  fill: var(--body-color);
+}
+
+.label {
+  visibility: hidden;
+  display: none;
+}

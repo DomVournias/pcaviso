@@ -1,0 +1,36 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+}
+
+.block {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 12px 18px -6px rgba(34, 56, 101, 0.04);
+  margin-bottom: 1.5rem;
+
+  #post_block_info {
+    margin-left: 1rem !important;
+  }
+}
+
+[data-theme="dark"] .block {
+  color: var(--body-color);
+  background-color: var(--gray-300);
+}
+
+.sticky {
+  position: sticky;
+  top: 20px;
+}

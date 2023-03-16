@@ -1,0 +1,15 @@
+.heading {
+  margin-bottom: 1.5rem;
+}
+
+.categories {
+  list-style: none;
+  font-size: 17px;
+  li {
+    margin-bottom: 0.7rem;
+    a:hover {
+      color: var(--orange);
+      transition: color 0.1s ease-in-out;
+    }
+  }
+}

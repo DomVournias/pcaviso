@@ -1,0 +1,49 @@
+.heading {
+  margin-bottom: 1.5rem;
+}
+
+.posts {
+  list-style: none;
+}
+
+.post {
+  margin-bottom: 1rem;
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  &:hover {
+    .title {
+      color: var(--orange);
+      transition: color 0.1s ease-in-out;
+    }
+  }
+}
+
+.image {
+  position: relative;
+
+  img {
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
+
+.info {
+  margin-left: 1.5rem;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.meta {
+  font-size: 13px;
+  line-height: normal;
+  opacity: 0.7;
+  margin-top: 5px;
+}

@@ -1,0 +1,14 @@
+.links {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  gap: 2rem;
+  transition: all 0.1s ease-in-out;
+
+  :hover {
+    color: var(--orange);
+    transition: color 0.1s ease-in-out;
+  }
+}

@@ -1,0 +1,22 @@
+.container {
+  background-color: var(--silver);
+}
+
+[data-theme="dark"] .container {
+  background-color: var(--body-bg);
+}
+
+.wrapper {
+  width: 1280px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) var(--sidebarWidth);
+  grid-column-gap: var(--sidebarGap);
+}
+
+.content {
+  overflow: hidden;
+}

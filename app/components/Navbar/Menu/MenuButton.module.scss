@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+  z-index: 1100;
+}
+
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
+
+.desktopMenu {
+  position: absolute;
+  z-index: 1100;
+}

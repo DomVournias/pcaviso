@@ -1,0 +1,16 @@
+.container {
+  margin-top: 60px;
+}
+
+.heading {
+  margin-bottom: 1.5rem;
+}
+
+.link {
+  margin-bottom: 0.7rem;
+
+  &:hover {
+    color: var(--orange);
+    transition: color 0.1s ease-in-out;
+  }
+}
