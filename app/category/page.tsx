@@ -3,7 +3,7 @@ import getDynamicData from "@/lib/functions/getDynamicData";
 import categoryPosts from "@/lib/queries/categoryPosts";
 import PostCard from "../components/Cards/PostCard";
 import formatPageTitle from "@/lib/utils/formatPageTitle";
-import styles from "../../../styles/layout.module.scss";
+import styles from "./layout.module.scss";
 
 const CategoryArchive = async ({ params: category_sub }: string | any) => {
   const { data } = await getDynamicData(categoryPosts(category_sub));
