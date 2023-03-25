@@ -21,7 +21,6 @@ export default function RootLayout({
         <body>
           <Providers>
             <div id="myportal" />
-
             <Navbar />
             <main>{children}</main>
             <Footer />

@@ -1,6 +1,6 @@
 export default async function getData(query: string) {
   try {
-    const { data } = await fetch("https://pcaviso.com/graphql", {
+    const data = await fetch("https://pcaviso.com/graphql", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -11,7 +11,7 @@ export default async function getData(query: string) {
       cache: "no-store",
     }).then((res) => res.json());
 
-    return data;
+    return data.data;
   } catch (error) {
     console.error(error);
   }

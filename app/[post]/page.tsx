@@ -13,6 +13,8 @@ export default async function Post({
 }) {
   const { postBy } = await getData(getPostBySlug(post));
 
+  // console.log(postBy.data.postBy);
+
   const title = postBy.title;
   const date = formatDate(postBy.date);
   const featuredImage = postBy.featuredImage.node.sourceUrl;

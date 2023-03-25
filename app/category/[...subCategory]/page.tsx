@@ -4,8 +4,8 @@ import categoryPosts from "@/lib/queries/categoryPosts";
 import PostCard from "@/app/components/Cards/PostCard";
 import formatPageTitle from "@/lib/utils/formatPageTitle";
 
-const SingleCategory = async ({ params: { category } }: string | any) => {
-  let currentCategory = category[category.length - 1];
+const SingleCategory = async ({ params: { subCategory } }: string | any) => {
+  let currentCategory = subCategory[subCategory.length - 1];
   const { data } = await getDynamicData(categoryPosts(currentCategory));
 
   const posts = data.posts.nodes;

@@ -8,6 +8,7 @@ export default function Top() {
     <div className={styles.container}>
       <div className={styles.inner}>
         <Socials />
+        {/* @ts-expect-error Server Component */}
         <Menu />
       </div>
     </div>

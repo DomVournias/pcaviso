@@ -4,7 +4,6 @@ import logo from "./logo.png";
 import logoW from "./logoW.png";
 import Link from "next/link";
 import SearchButton from "./Search/SearchBtn";
-import NavLinks from "./NavLinks";
 import styles from "./Navbar.module.scss";
 import ColorThemeToggle from "./ColorTheme/ColorThemeToggle";
 import MenuButton from "./Menu/MenuButton";
@@ -16,6 +15,7 @@ export default function Navbar() {
       <div className={styles.inner}>
         <div className={`${styles.buttons} ${styles.start}`}>
           <MenuButton>
+            {/* @ts-expect-error Server Component */}
             <DesktopMenu />
           </MenuButton>
           <ColorThemeToggle />
